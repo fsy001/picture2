@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片</title>
+</head>
+<body>
+<img th:src="@{${src}}"/>
+<img th:src="@{${srca}}"/>
+</body>
+
+<!--上传-->
+//前端
+<form action="/good/upload" method="post" enctype="multipart/form-data">
+    <label>上传图片</label>
+    <input type="file"  name="file"/>
+    <input type="submit" value="提交上传"/>
+</form>
+</html>
+
+
+<!--注意事项-->
+<!--1、注意约束头-->
